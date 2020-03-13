@@ -70,12 +70,6 @@ const ProductFullDetail = props => {
                     <h1 className={classes.productName}>
                         {productDetails.name}
                     </h1>
-                    <p className={classes.productPrice}>
-                        <Price
-                            currencyCode={productDetails.price.currency}
-                            value={productDetails.price.value}
-                        />
-                    </p>
                 </section>
                 <section className={classes.imageCarousel}>
                     <Carousel images={mediaGalleryEntries} />
@@ -89,6 +83,13 @@ const ProductFullDetail = props => {
                     />
                 </section>
                 <section className={classes.cartActions}>
+                    <p className={classes.productPrice}>
+                        <Price
+                            currencyCode={productDetails.price.currency}
+                            value={productDetails.price.value}
+                        />
+                    </p>
+
                     <Button
                         priority="high"
                         onClick={handleAddToCart}
