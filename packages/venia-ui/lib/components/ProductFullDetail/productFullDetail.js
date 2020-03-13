@@ -94,7 +94,7 @@ const ProductFullDetail = props => {
                         onClick={handleAddToCart}
                         disabled={isAddToCartDisabled}
                     >
-                        Add to Cart
+                        Buy product
                     </Button>
                 </section>
                 <section className={classes.description}>
