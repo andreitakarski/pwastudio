@@ -1,0 +1,33 @@
+.header {
+    padding: 0.5rem;
+    background-color: rgb(var(--venia-grey));
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.icon {
+    margin-right: 0.5rem;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.oldPrice {
+    text-decoration: line-through;
+}
+
+.currentPrice {
+    font-weight: 600;
+    color: rgb(var(--venia-error));
+    /*color: #de1b3c;*/
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}

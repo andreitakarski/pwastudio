@@ -12,6 +12,7 @@
             'images actions'
             'images options'
             'images quantity'
+            'images promo'
             'images cart'
             'images .';
         grid-template-columns: 1.5625fr 1fr;
@@ -162,4 +163,9 @@
 
 .relatedTitle {
     composes: sectionTitle;
+}
+
+.priceWithDiscount {
+    composes: section;
+    grid-area: promo;
 }

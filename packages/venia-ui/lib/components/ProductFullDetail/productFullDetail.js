@@ -11,6 +11,7 @@ import Button from '../Button';
 import Carousel from '../ProductImageCarousel';
 import { fullPageLoadingIndicator } from '../LoadingIndicator';
 import Quantity from '../ProductQuantity';
+import PriceWithDiscount from '../PriceWithDiscount'
 import RichText from '../RichText';
 import ADD_CONFIGURABLE_MUTATION from '../../queries/addConfigurableProductsToCart.graphql';
 import ADD_SIMPLE_MUTATION from '../../queries/addSimpleProductsToCart.graphql';
@@ -86,6 +87,12 @@ const ProductFullDetail = props => {
                     <Quantity
                         initialValue={quantity}
                         onValueChange={handleSetQuantity}
+                    />
+                </section>
+                <section className={classes.priceWithDiscount}>
+                    <PriceWithDiscount
+                        price={productDetails.price}
+                        productName={productDetails.name}
                     />
                 </section>
                 <section className={classes.cartActions}>
